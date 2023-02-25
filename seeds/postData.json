@@ -1,0 +1,14 @@
+[
+  {
+    "subject": "MVC in the techspace",
+    "content": "MVC stands for Model-View-Controller and is a highly popular framework paradigm."
+  },
+  {
+    "subject": "Is ORM better than plain SQL?",
+    "content": "I really like what ORM architecture can provide once implemented, but it can be a bit tricky with the models and relationships at first."
+  },
+  {
+    "subject": "React vs Angular",
+    "content": "We'll be learning React in the class, but know Angular is pretty popular too."
+  }
+]
