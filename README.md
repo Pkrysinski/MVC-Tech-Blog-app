@@ -16,7 +16,7 @@ The purpose of this app is to showcase our understanding of the Model-View-Contr
 ## Links
 
 Link to deployed application...
-
+https://mvc-tech-blog-app-production.up.railway.app/
 
 Link to GitHub repo...
 https://github.com/Pkrysinski/MVC-Tech-Blog-app
