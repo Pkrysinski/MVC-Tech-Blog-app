@@ -74,7 +74,7 @@ THEN I see navigation links for the homepage, the dashboard, and the option to l
 - - - - -
 WHEN I click on the homepage option in the navigation,
 THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created.
->
+>DONE.
 
 - - - - -
 WHEN I click on an existing blog post,
@@ -89,7 +89,7 @@ THEN the comment is saved and the post is updated to display the comment, the co
 - - - - -
 WHEN I click on the dashboard option in the navigation,
 THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post.
->
+>DONE.
 
 - - - - -
 WHEN I click on the button to add a new blog post,
@@ -109,7 +109,7 @@ THEN I am able to delete or update my post and taken back to an updated dashboar
 - - - - -
 WHEN I click on the logout option in the navigation,
 THEN I am signed out of the site.
->
+>DONE.
 
 - - - - -
 WHEN I am idle on the site for more than a set time,
