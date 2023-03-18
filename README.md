@@ -100,7 +100,8 @@ THEN the title and contents of my post are saved and I am taken back to an updat
 - - - - -
 WHEN I click on one of my existing posts in the dashboard,
 THEN I am able to delete or update my post and taken back to an updated dashboard.
->TODO: Add update/delete functionality.
+>DONE: Delete functionality works.
+>TODO: Add update functionality.  Halfway through this, just need to populate the form fields with the data that already exists for the post.
 
 - - - - -
 WHEN I click on the logout option in the navigation,
