@@ -1,10 +1,7 @@
 <div class="text-center">
-  <h2>{{subject}}</h2>
-  <p>{{content}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <button class="btn btn-primary">Add a comment!</button>
-  </p>
+    <h2>{{subject}}</h2>
+    <p>{{content}}</p>
+        <p>Created by {{user.name}} on {{format_date date_created}}</p>
       {{!-- If there are comments for the blog post, display them --}}
     {{#if comments.length}}
         <div class="col-md-6 project-list">
@@ -24,4 +21,7 @@
         {{/each}}
         </div>
     {{/if}}
+    <p>
+        <button class="btn btn-primary">Add a comment!</button>
+    </p>
 </div>

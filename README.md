@@ -28,10 +28,6 @@ AS A developer who writes about tech...
 I WANT a CMS-style blog site,
 SO THAT I can publish articles, blog posts, and my thoughts and opinions.
 
-## Wireframe
-models/
-User has many Posts, and Posts have many Comments.
-
 ## Acceptence Criteria Notes
 
 GIVEN a CMS-style blog site...
@@ -49,7 +45,7 @@ THEN I am taken to the homepage.
 - - - - -
 WHEN I click on any other links in the navigation,
 THEN I am prompted to either sign up or sign in.
->
+>DONE, this now works when you try to view a blog post, go to the DashBoard to create a new post.
 
 - - - - -
 WHEN I choose to sign up,
