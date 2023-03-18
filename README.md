@@ -75,12 +75,12 @@ THEN I am taken to the homepage and presented with existing blog posts that incl
 - - - - -
 WHEN I click on an existing blog post,
 THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment.
->ALMOST DONE. TODO: Need to build in option to leave a comment.
+>TODO: Need to build in option to leave a comment.
 
 - - - - -
 WHEN I enter a comment and click on the submit button while signed in,
 THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created.
->
+>TODO: Need to build in option to leave a comment.
 
 - - - - -
 WHEN I click on the dashboard option in the navigation,
@@ -90,17 +90,17 @@ THEN I am taken to the dashboard and presented with any blog posts I have alread
 - - - - -
 WHEN I click on the button to add a new blog post,
 THEN I am prompted to enter both a title and contents for my blog post.
->
+>DONE.  newpost.handlebars added to support creation of new blog post.
 
 - - - - -
 WHEN I click on the button to create a new blog post,
 THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post.
->
+>DONE. New post now shows up on homepage.
 
 - - - - -
 WHEN I click on one of my existing posts in the dashboard,
 THEN I am able to delete or update my post and taken back to an updated dashboard.
->
+>TODO: Add update/delete functionality.
 
 - - - - -
 WHEN I click on the logout option in the navigation,
@@ -110,4 +110,4 @@ THEN I am signed out of the site.
 - - - - -
 WHEN I am idle on the site for more than a set time,
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments.
->
+>DONE.
