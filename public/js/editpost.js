@@ -6,6 +6,12 @@ const editFormHandler = async (event) => {
 
   if (subject && content) {
     if (event.target.hasAttribute('data-id')) {
+
+      //TODO: It doesn't have the ID, so not sure how to get it...
+      console.log("HAS ID");
+
+        const id = event.target.getAttribute('data-id');
+
         const response = await fetch(`/api/blogs/${id}`, {
           method: 'PUT',
           body: JSON.stringify({ subject, content }),

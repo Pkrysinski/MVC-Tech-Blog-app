@@ -75,7 +75,6 @@ router.get('/newpost', withAuth, async (req, res) => {
   }
 });
 
-// BCS Learning assistent had me add this...
 router.get('/editpost/:id', withAuth, async (req, res) => {
   try {
     res.render('editpost', {

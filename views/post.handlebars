@@ -25,6 +25,7 @@
         <button class="btn btn-primary">Add a comment!</button>
     </p>
     <p>
+        {{!-- This href replaces the handlebars component with the editpost.handlebars --}}
         <a href="/editpost/{{id}}">
             <button class="btn btn-primary edit-post" data-id="{{id}}">UPDATE post</button>        
         </a>
@@ -34,5 +35,4 @@
     </p>    
 </div>
 
-{{!-- <script src="/js/editpost.js"></script> --}}
 <script src="/js/deletepost.js"></script>
