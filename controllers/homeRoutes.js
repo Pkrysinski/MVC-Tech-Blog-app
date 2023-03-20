@@ -77,9 +77,18 @@ router.get('/newpost', withAuth, async (req, res) => {
 
 router.get('/editpost/:id', withAuth, async (req, res) => {
   try {
-    res.render('editpost', {
-      logged_in: req.session.logged_in
-    });
+
+    const postData = await Post.findByPk(req.params.id
+    );
+    if(postData) {
+      const post = postData.get({ plain: true });
+      res.render('editpost', {
+        post
+      });
+
+    } else {
+      res.status(400).end();
+    }
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

@@ -3,16 +3,12 @@ const editFormHandler = async (event) => {
 
   const subject = document.querySelector('#post-subject').value.trim();
   const content = document.querySelector('#post-content').value.trim();
+  const postID = document.querySelector('input[name="postId"]').value;
 
   if (subject && content) {
-    if (event.target.hasAttribute('data-id')) {
 
-      //TODO: It doesn't have the ID, so not sure how to get it...
-      console.log("HAS ID");
-
-        const id = event.target.getAttribute('data-id');
-
-        const response = await fetch(`/api/blogs/${id}`, {
+    if (postID) {
+        const response = await fetch(`/api/blogs/${postID}`, {
           method: 'PUT',
           body: JSON.stringify({ subject, content }),
           headers: {
@@ -25,9 +21,15 @@ const editFormHandler = async (event) => {
         } else {
           alert('Failed to edit post!');
         }
+      } else {
+        res.status(400).end();
       }
+    } else {
+      window.alert("Please make sure Title and Content are populated!");
     }
 };
+
+
 
 document
   .querySelector('.edit-post-form')
