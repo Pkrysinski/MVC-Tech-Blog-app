@@ -3,6 +3,8 @@
 ## Purpose
 The purpose of this app is to showcase our understanding of the Model-View-Controller (MVC) architecture through expressing our knowledge of why separation of concerns in this consideration is a great practive to follow.  I'll be building a blog-style tech forum where users can post questions and respondants can provide answers.  This is a real test of combining both front-end grace with back-end functionality and even starting to involve some authentication/authorization in there now as well.
 
+## Screenshot of App Homepage
+![image](https://user-images.githubusercontent.com/25781123/226415871-f790cc4c-9e62-4af5-9de6-27ecafd6e611.png)
 
 ## Educational Concepts Implemented
 >MVC paradigm
