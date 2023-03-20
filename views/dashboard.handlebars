@@ -1,5 +1,18 @@
 <div class="text-center">
     <a href="/newpost">
         <button class="btn btn-primary">+ Create Post</button>
-    </a>    
+    </a>
+
+    {{#if posts.length}}
+    {{!-- <div class="col-md-6 post-list"> --}}
+    <div class="text-center">
+        <h3>Current Posts:</h3>
+
+        {{#each posts as |post|}}
+            <h4>
+                <a href="/post/{{post.id}}">{{post.subject}}</a>
+            </h4>
+        {{/each}}
+    </div>
+    {{/if}}    
 </div>

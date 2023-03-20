@@ -55,7 +55,20 @@ router.get('/post/:id', withAuth, async (req, res) => {
 
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
+    // Get all posts and JOIN with user data
+    const postData = await Post.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });    
+    // Serialize data so the template can read it
+    const posts = postData.map((post) => post.get({ plain: true }));    
+
     res.render('dashboard', {
+      posts, 
       logged_in: req.session.logged_in
     });
   } catch (err) {
